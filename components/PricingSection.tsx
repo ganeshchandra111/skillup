@@ -11,7 +11,7 @@ export default function PricingSection() {
         // Message logic: Hello Skill Up, We would like to have a website worth [PLAN PRICE]. Please share more details about the process and timeline. Thank you.
         const message = `Hello Skill Up,\nWe would like to have a website worth ${price}.\nPlease share more details about the process and timeline.\nThank you.`;
         const encodedMessage = encodeURIComponent(message);
-        const phoneNumber = "919876543210"; // Replace with actual number
+        const phoneNumber = "919959912572"; // Replace with actual number
         return `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     };
 
