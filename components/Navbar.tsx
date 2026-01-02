@@ -38,7 +38,9 @@ export default function Navbar() {
             <div className="container mx-auto px-4 md:px-8 flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="text-2xl font-bold tracking-tighter text-primary">
-                    Skill<span className="text-foreground">Up</span>
+                    {/* Skill<span className="text-foreground">Up</span> */}
+                    {/* <img src="D:/_PROJECTS/skillup/app/public/skillup_logo.jpg" alt="skillup_logo" width={100} height={100} /> */}
+                    <img src="/skillup_logo.jpg" alt="skillup_logo" width={100} height={100} />
                 </Link>
 
                 {/* Desktop Nav */}
