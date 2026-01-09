@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { MessageCircle, Mail } from "lucide-react";
 import Link from "next/link";
@@ -9,6 +10,24 @@ import Link from "next/link";
 // I'll use standard input tag styled with Tailwind since I haven't created Input component yet.
 
 export default function ContactSection() {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
+    const handleWhatsAppClick = () => {
+        // Message logic: Hello Skill Up, We would like to have a website worth [PLAN PRICE]. Please share more details about the process and timeline. Thank you.
+        const message = `Hello skillup,\nwe would like to work with you. \nPlease share more details about the process and timeline.\nThank you.`;
+        const encodedMessage = encodeURIComponent(message);
+        const phoneNumber = "919494333702"; // Replace with actual number
+        return `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    };
+
+    const handleSubmit = () => {
+        const SendingMessage = `Hello, i am ${name}. \n My email is ${email}. \n ${message}`;
+        const encodedMessage = encodeURIComponent(SendingMessage);
+        const phoneNumber = "919494333702"; // Replace with actual number
+        return `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    };
     return (
         <section id="contact" className="py-24 bg-primary text-primary-foreground relative overflow-hidden">
             {/* Decorative */}
@@ -56,7 +75,7 @@ export default function ContactSection() {
 
                             <div className="mt-8">
                                 <Button asChild size="lg" variant="secondary" className="gap-2 text-primary">
-                                    <Link href="https://wa.me/919494333702" target="_blank">
+                                    <Link href={handleWhatsAppClick()} target="_blank">
                                         <MessageCircle size={20} /> Chat on WhatsApp
                                     </Link>
                                 </Button>
@@ -81,6 +100,7 @@ export default function ContactSection() {
                                     type="text"
                                     className="w-full h-10 px-3 rounded-md border bg-background focus:outline-none focus:ring-2 focus:ring-primary"
                                     placeholder="Your Name"
+                                    onChange={(e) => setName(e.target.value)}
                                 />
                             </div>
                             <div className="space-y-2">
@@ -90,6 +110,7 @@ export default function ContactSection() {
                                     type="email"
                                     className="w-full h-10 px-3 rounded-md border bg-background focus:outline-none focus:ring-2 focus:ring-primary"
                                     placeholder="john@example.com"
+                                    onChange={(e) => setEmail(e.target.value)}
                                 />
                             </div>
                             <div className="space-y-2">
@@ -99,10 +120,13 @@ export default function ContactSection() {
                                     rows={4}
                                     className="w-full p-3 rounded-md border bg-background focus:outline-none focus:ring-2 focus:ring-primary resize-none"
                                     placeholder="Tell us about your project..."
+                                    onChange={(e) => setMessage(e.target.value)}
                                 />
                             </div>
                             <Button type="submit" className="w-full">
-                                Send Message
+                                <Link href={handleSubmit()} target="_blank">
+                                    Send Message
+                                </Link>
                             </Button>
                         </form>
                     </motion.div>
