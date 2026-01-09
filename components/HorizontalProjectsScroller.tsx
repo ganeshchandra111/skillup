@@ -38,22 +38,42 @@ export default function HorizontalProjectsScroller() {
                             key={project.id}
                             className="relative group h-[50vh] md:h-[60vh] w-[80vw] md:w-[40vw] lg:w-[30vw] min-w-[300px] bg-background text-foreground rounded-2xl overflow-hidden shadow-2xl flex-shrink-0"
                         >
-                            {/* Image Placeholder */}
-                            <div className="absolute inset-0 bg-muted flex items-center justify-center">
-                                {/* Replace with Next/Image using project.image */}
-                                <span className="text-4xl font-bold text-muted-foreground/20">{project.title}</span>
+                            {/* Website Preview (Iframe or Image) */}
+                            <div className="absolute inset-0 bg-muted">
+                                {project.link === "none" || project.link === "javascript:void(0)" ? (
+                                    <div className="w-full h-full relative">
+                                        {/* Using standard img for simplicity in this context or could use Next Image */}
+                                        <img
+                                            src={project.image}
+                                            alt={project.title}
+                                            className="w-full h-full object-cover"
+                                        />
+                                    </div>
+                                ) : (
+                                    <iframe
+                                        src={project.link}
+                                        title={project.title}
+                                        className="w-[200%] h-[200%] border-0 transform scale-50 origin-top-left pointer-events-none"
+                                        loading="lazy"
+                                    />
+                                )}
+
+                                {/* Overlay to prevent interaction and darken for text readability */}
+                                <div className="absolute inset-0 bg-black/10 group-hover:bg-black/60 transition-colors duration-300" />
                             </div>
 
                             {/* Content Overlay */}
-                            <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-8 text-center text-white">
+                            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-8 text-center text-white z-10">
                                 <span className="text-sm font-medium tracking-widest uppercase mb-2 text-primary">{project.category}</span>
                                 <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
                                 <p className="mb-8">{project.description}</p>
-                                <Button asChild variant="default" className="bg-white text-black hover:bg-white/90">
-                                    <Link href={project.link} target="_blank">
-                                        Visit Live Website <ExternalLink className="ml-2 h-4 w-4" />
-                                    </Link>
-                                </Button>
+                                {project.link !== "none" && (
+                                    <Button asChild variant="default" className="bg-white text-black hover:bg-white/90">
+                                        <Link href={project.link} target="_blank">
+                                            Visit Live Website <ExternalLink className="ml-2 h-4 w-4" />
+                                        </Link>
+                                    </Button>
+                                )}
                             </div>
                         </div>
                     ))}

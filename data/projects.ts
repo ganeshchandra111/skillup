@@ -10,34 +10,34 @@ export interface Project {
 export const projects: Project[] = [
     {
         id: 1,
-        title: "E-Commerce Fashion Store",
-        category: "E-Commerce",
-        image: "/images/project1.jpg",
-        description: "A modern fashion store with cart and checkout functionality.",
-        link: "https://example.com"
+        title: "Full Stack Application",
+        category: "Web Application",
+        image: "/spidyhost.png",
+        description: "A comprehensive full stack hosting solution built for performance.",
+        link: "none"
     },
     {
         id: 2,
-        title: "Corporate Agency Site",
-        category: "Business",
-        image: "/images/project2.jpg",
-        description: "Professional website for a digital marketing agency.",
-        link: "https://example.com"
+        title: "E-Commerce Fragrance Store",
+        category: "E-Commerce",
+        image: "/images/project2.jpg", // Keeping placeholder
+        description: "An elegant online store for Qalb Fragrance.",
+        link: "https://qalbfragrance.netlify.app/"
     },
     {
         id: 3,
-        title: "Restaurant Landing Page",
-        category: "Hospitality",
-        image: "/images/project3.jpg",
-        description: "High-conversion landing page for a local bistro.",
-        link: "https://example.com"
-    },
-    {
-        id: 4,
-        title: "Tech Startup Portfolio",
+        title: "Medical Professional Portfolio",
         category: "Portfolio",
-        image: "/images/project4.jpg",
-        description: "Clean and minimal portfolio for a tech startup.",
-        link: "https://example.com"
-    }
+        image: "/images/project3.jpg", // Keeping placeholder
+        description: "A professional portfolio website for doctors.",
+        link: "https://joyful-cupcake-356e56.netlify.app/"
+    },
+    // {
+    //     id: 4,
+    //     title: "Interior Design Portfolio",
+    //     category: "Interior Design",
+    //     image: "/images/project4.jpg", // Keeping placeholder
+    //     description: "Showcase for interior design projects (Work in Progress).",
+    //     link: "https://app.netlify.com/projects/interiordesign11/overview"
+    // }
 ];

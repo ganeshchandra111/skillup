@@ -48,26 +48,92 @@ export default function HeroSection() {
                         <div className="absolute -z-10 top-0 right-0 w-72 h-72 bg-primary/20 rounded-full blur-3xl" />
 
                         {/* Mockup Placeholder */}
-                        <div className="relative aspect-video bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 rounded-lg shadow-2xl border flex items-center justify-center overflow-hidden">
-                            <div className="absolute inset-x-0 top-0 h-8 bg-background border-b flex items-center px-4 gap-2">
+                        <div className="relative aspect-video bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 rounded-lg shadow-2xl border flex flex-col overflow-hidden">
+                            <div className="h-8 bg-background border-b flex items-center px-4 gap-2 shrink-0">
                                 <div className="w-3 h-3 rounded-full bg-red-400" />
                                 <div className="w-3 h-3 rounded-full bg-yellow-400" />
                                 <div className="w-3 h-3 rounded-full bg-green-400" />
                             </div>
-                            <div className="mt-8 p-8 text-center text-muted-foreground">
-                                <span className="font-semibold block mb-2">Website Mockup</span>
-                                <span className="text-sm border px-3 py-1 rounded-full border-muted-foreground/30">
-                                    Interactive Demo
-                                </span>
+                            <div className="flex-1 p-8 relative">
+                                {/* Simulated Skeleton UI Animation */}
+                                <div className="space-y-4">
+                                    <motion.div
+                                        className="h-8 bg-muted-foreground/20 rounded w-3/4"
+                                        initial={{ width: "0%" }}
+                                        animate={{ width: "75%" }}
+                                        transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+                                    />
+                                    <motion.div
+                                        className="h-4 bg-muted-foreground/10 rounded w-full"
+                                        initial={{ width: "0%" }}
+                                        animate={{ width: "100%" }}
+                                        transition={{ duration: 1, ease: "easeOut", delay: 0.8 }}
+                                    />
+                                    <motion.div
+                                        className="h-4 bg-muted-foreground/10 rounded w-5/6"
+                                        initial={{ width: "0%" }}
+                                        animate={{ width: "83%" }}
+                                        transition={{ duration: 1, ease: "easeOut", delay: 1 }}
+                                    />
+                                    <div className="flex gap-4 mt-8">
+                                        <motion.div
+                                            className="h-32 w-full bg-muted-foreground/5 rounded-lg border-2 border-dashed border-muted-foreground/10"
+                                            initial={{ opacity: 0, y: 10 }}
+                                            animate={{ opacity: 1, y: 0 }}
+                                            transition={{ duration: 0.5, delay: 1.5 }}
+                                        />
+                                        <motion.div
+                                            className="h-32 w-full bg-muted-foreground/5 rounded-lg border-2 border-dashed border-muted-foreground/10"
+                                            initial={{ opacity: 0, y: 10 }}
+                                            animate={{ opacity: 1, y: 0 }}
+                                            transition={{ duration: 0.5, delay: 1.7 }}
+                                        />
+                                    </div>
+                                </div>
+
+                                <motion.div
+                                    className="absolute inset-0 flex items-center justify-center"
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    transition={{ delay: 2.5, duration: 0.5 }}
+                                >
+                                    <span className="bg-primary/90 text-primary-foreground px-4 py-2 rounded-full text-sm font-semibold shadow-lg backdrop-blur-sm">
+                                        Live Preview
+                                    </span>
+                                </motion.div>
                             </div>
 
-                            {/* Floating Element 1 - Mobile Mockup Hint */}
+                            {/* Floating Element 1 - Code Snippet Hint */}
                             <motion.div
-                                className="absolute -bottom-6 -right-6 w-24 h-48 bg-background rounded-[2rem] border-4 border-gray-800 shadow-xl"
-                                initial={{ y: 20 }}
-                                animate={{ y: 0 }}
-                                transition={{ repeat: Infinity, repeatType: "reverse", duration: 3 }}
-                            />
+                                className="absolute -bottom-6 -right-6 bg-background rounded-xl border shadow-xl p-4 hidden sm:block"
+                                initial={{ y: 20, opacity: 0 }}
+                                animate={{ y: 0, opacity: 1 }}
+                                transition={{ delay: 1, duration: 0.5 }}
+                            >
+                                <div className="space-y-2 w-32">
+                                    <div className="h-2 bg-primary/20 rounded w-full" />
+                                    <div className="h-2 bg-primary/20 rounded w-2/3" />
+                                    <div className="h-2 bg-primary/20 rounded w-3/4" />
+                                </div>
+                            </motion.div>
+
+                            {/* Floating Element 2 - Success Notification */}
+                            <motion.div
+                                className="absolute top-1/2 -left-12 bg-background rounded-lg border shadow-xl p-3 flex items-center gap-3"
+                                initial={{ x: -20, opacity: 0 }}
+                                animate={{ x: 0, opacity: 1 }}
+                                transition={{ delay: 2, duration: 0.5 }}
+                            >
+                                <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg>
+                                </div>
+                                <div className="text-xs">
+                                    <div className="font-semibold">Optimized</div>
+                                    <div className="text-muted-foreground">100% Performance</div>
+                                </div>
+                            </motion.div>
                         </div>
                     </motion.div>
                 </div>

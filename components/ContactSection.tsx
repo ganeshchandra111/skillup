@@ -50,13 +50,13 @@ export default function ContactSection() {
                                 </div>
                                 <div>
                                     <p className="font-semibold">Email us</p>
-                                    <p className="text-sm opacity-80">hello@skillup.com</p>
+                                    <p className="text-sm opacity-80">skillup.edu.in@gmail.com</p>
                                 </div>
                             </div>
 
                             <div className="mt-8">
                                 <Button asChild size="lg" variant="secondary" className="gap-2 text-primary">
-                                    <Link href="https://wa.me/919959912572" target="_blank">
+                                    <Link href="https://wa.me/919494333702" target="_blank">
                                         <MessageCircle size={20} /> Chat on WhatsApp
                                     </Link>
                                 </Button>

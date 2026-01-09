@@ -9,45 +9,60 @@ export interface PricingPlan {
 
 export const pricingPlans: PricingPlan[] = [
     {
-        id: "starter",
-        name: "Starter Website",
-        price: "₹14,999",
-        description: "Perfect for small businesses looking to establish an online presence.",
+        id: "spa",
+        name: "Single Page Apps (SPA)",
+        price: "₹8,000",
+        description: "Fast, interactive, and responsive single-page applications.",
         features: [
-            "5 Page Website",
-            "Mobile Responsive Design",
+            "Single Page Layout",
+            "High Performance",
+            "Responsive Design",
+            "Basic SEO",
             "Contact Form",
-            "Social Media Integration",
             "1 Month Support"
         ]
     },
     {
-        id: "business",
-        name: "Business Website",
-        price: "₹29,999",
-        description: "Ideal for growing companies needing a professional edge.",
+        id: "portfolio",
+        name: "Portfolio Website",
+        price: "₹10,000",
+        description: "Showcase your work and skills with a professional portfolio.",
         features: [
-            "10 Page Website",
-            "SEO Optimization",
-            "CMS Integration",
-            "Blog Section",
-            "Google Maps Integration",
+            "About & Projects Section",
+            "Resume Download",
+            "Gallery/Showcase",
+            "Mobile Responsive",
+            "Social Media Links",
+            "1 Month Support"
+        ]
+    },
+    {
+        id: "ecommerce",
+        name: "E-Commerce Store",
+        price: "₹15,000",
+        description: "Start selling online with a fully functional e-commerce store.",
+        features: [
+            "Product Catalog",
+            "Shopping Cart",
+            "Payment Gateway",
+            "Order Management",
+            "Mobile Responsive",
             "3 Months Support"
         ],
         popular: true
     },
     {
-        id: "premium",
-        name: "Premium / E-commerce",
-        price: "₹59,999",
-        description: "Complete solution for large businesses or online stores.",
+        id: "business",
+        name: "Business Website",
+        price: "₹20,000",
+        description: "Professional website to scale your business and brand identity.",
         features: [
-            "Unlimited Pages",
-            "E-commerce Functionality",
-            "Payment Gateway",
-            "Advanced Analytics",
-            "Speed Optimization",
-            "6 Months Support"
+            "Multi-page Structure",
+            "Advanced SEO",
+            "CMS Integration",
+            "Blog/News Section",
+            "Analytics Setup",
+            "3 Months Support"
         ]
     }
 ];

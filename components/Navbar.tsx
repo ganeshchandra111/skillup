@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
@@ -37,10 +38,20 @@ export default function Navbar() {
         >
             <div className="container mx-auto px-4 md:px-8 flex items-center justify-between">
                 {/* Logo */}
-                <Link href="/" className="text-2xl font-bold tracking-tighter text-primary">
-                    {/* Skill<span className="text-foreground">Up</span> */}
-                    {/* <img src="D:/_PROJECTS/skillup/app/public/skillup_logo.jpg" alt="skillup_logo" width={100} height={100} /> */}
-                    <img src="/skillup_logo.jpg" alt="skillup_logo" width={100} height={100} />
+                <Link href="/" className="flex items-center gap-2">
+                    <div className="relative overflow-hidden rounded center" >
+                        <Image
+                            src="/skillup.png"
+                            alt="SkillUp Logo"
+                            width={120}
+                            height={150}
+                            className="object-cover"
+                            sizes="(max-width: 768px) 100vw, (max-width: 250px) 50vw, 33vw"
+                        />
+                    </div>
+                    {/* <span className="text-2xl font-bold tracking-tighter text-primary">
+                        Skill<span className="text-foreground">Up</span>
+                    </span> */}
                 </Link>
 
                 {/* Desktop Nav */}
