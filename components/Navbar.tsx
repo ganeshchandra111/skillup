@@ -93,7 +93,7 @@ export default function Navbar() {
                                 <Link
                                     key={link.name}
                                     href={link.href}
-                                    className="text-lg font-medium text-foreground hover:text-primary"
+                                    className="text-lg font-medium text-foreground hover:text-primary hover:scale-105 transition-all"
                                     onClick={() => setIsOpen(false)}
                                 >
                                     {link.name}

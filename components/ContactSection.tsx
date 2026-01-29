@@ -29,7 +29,7 @@ export default function ContactSection() {
         return `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     };
     return (
-        <section id="contact" className="py-24 bg-primary text-primary-foreground relative overflow-hidden">
+        <section id="contact" className="py-24 bg-foreground text-primary-foreground relative overflow-hidden">
             {/* Decorative */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none">
                 <div className="absolute top-1/4 -left-12 w-64 h-64 bg-white rounded-full blur-[100px]" />

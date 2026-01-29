@@ -21,7 +21,7 @@ export default function HeroSection() {
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
                             We Build Professional Websites That Help Businesses Grow
                         </h1>
-                        <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0">
+                        <p className="text-lg md:text-xl text-accent-foreground mb-8 max-w-2xl mx-auto lg:mx-0">
                             Transform your digital presence with high-performance, beautiful, and user-centric websites tailored for your success.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -58,26 +58,26 @@ export default function HeroSection() {
                                 {/* Simulated Skeleton UI Animation */}
                                 <div className="space-y-4">
                                     <motion.div
-                                        className="h-8 bg-muted-foreground/20 rounded w-3/4"
+                                        className="h-8 bg-muted-foreground rounded w-3/4"
                                         initial={{ width: "0%" }}
                                         animate={{ width: "75%" }}
                                         transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
                                     />
                                     <motion.div
-                                        className="h-4 bg-muted-foreground/10 rounded w-full"
+                                        className="h-4 bg-muted-foreground rounded w-full"
                                         initial={{ width: "0%" }}
                                         animate={{ width: "100%" }}
                                         transition={{ duration: 1, ease: "easeOut", delay: 0.8 }}
                                     />
                                     <motion.div
-                                        className="h-4 bg-muted-foreground/10 rounded w-5/6"
+                                        className="h-4 bg-muted-foreground rounded w-5/6"
                                         initial={{ width: "0%" }}
                                         animate={{ width: "83%" }}
                                         transition={{ duration: 1, ease: "easeOut", delay: 1 }}
                                     />
                                     <div className="flex gap-4 mt-8">
                                         <motion.div
-                                            className="h-32 w-full bg-muted-foreground/5 rounded-lg border-2 border-dashed border-muted-foreground/10"
+                                            className="h-32 w-full bg-muted-foreground/2 rounded-lg border-2 border-dashed border-muted-foreground/10"
                                             initial={{ opacity: 0, y: 10 }}
                                             animate={{ opacity: 1, y: 0 }}
                                             transition={{ duration: 0.5, delay: 1.5 }}
@@ -97,7 +97,7 @@ export default function HeroSection() {
                                     animate={{ opacity: 1 }}
                                     transition={{ delay: 2.5, duration: 0.5 }}
                                 >
-                                    <span className="bg-primary/90 text-primary-foreground px-4 py-2 rounded-full text-sm font-semibold shadow-lg backdrop-blur-sm">
+                                    <span className="bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-semibold shadow-lg backdrop-blur-sm">
                                         Live Preview
                                     </span>
                                 </motion.div>
@@ -111,9 +111,9 @@ export default function HeroSection() {
                                 transition={{ delay: 1, duration: 0.5 }}
                             >
                                 <div className="space-y-2 w-32">
-                                    <div className="h-2 bg-primary/20 rounded w-full" />
-                                    <div className="h-2 bg-primary/20 rounded w-2/3" />
-                                    <div className="h-2 bg-primary/20 rounded w-3/4" />
+                                    <div className="h-2 bg-muted-foreground rounded w-full" />
+                                    <div className="h-2 bg-muted-foreground rounded w-2/3" />
+                                    <div className="h-2 bg-muted-foreground rounded w-3/4" />
                                 </div>
                             </motion.div>
 

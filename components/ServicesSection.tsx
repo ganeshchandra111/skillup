@@ -11,7 +11,7 @@ export default function ServicesSection() {
                 <div className="text-center mb-16">
                     <span className="text-primary font-semibold tracking-wider text-sm uppercase">Our Services</span>
                     <h2 className="text-3xl md:text-4xl font-bold mt-2">What We Offer</h2>
-                    <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+                    <p className="text-accent-foreground mt-4 max-w-2xl mx-auto">
                         Comprehensive web solutions tailored to your unique business needs.
                     </p>
                 </div>
@@ -22,7 +22,7 @@ export default function ServicesSection() {
                         return (
                             <motion.div
                                 key={service.id}
-                                className="bg-card border rounded-lg p-8 hover:shadow-lg transition-shadow duration-300"
+                                className="bg-secondary border rounded-lg p-8 hover:shadow-lg transition-shadow duration-300"
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
@@ -32,7 +32,7 @@ export default function ServicesSection() {
                                     <Icon size={24} />
                                 </div>
                                 <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-                                <p className="text-muted-foreground">{service.description}</p>
+                                <p className="text-accent-foreground">{service.description}</p>
                             </motion.div>
                         );
                     })}
