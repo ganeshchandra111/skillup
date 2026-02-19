@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion, Variants } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
+import MagneticWrapper from "./MagneticWrapper";
 
 export default function HeroSection() {
     const containerVariants: Variants = {
@@ -104,15 +105,19 @@ export default function HeroSection() {
                         </motion.p>
 
                         <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                            <Button size="lg" asChild className="text-lg px-8 h-14 bg-primary hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/25 hover:-translate-y-1">
-                                <Link href="#contact">Start a Project</Link>
-                            </Button>
-                            <Button size="lg" variant="outline" asChild className="text-lg px-8 h-14 border-2 hover:bg-secondary transition-all hover:-translate-y-1">
-                                <Link href="#projects" className="group">
-                                    View Our Work
-                                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                                </Link>
-                            </Button>
+                            <MagneticWrapper strength={0.3}>
+                                <Button size="lg" asChild className="text-lg px-8 h-14 bg-primary hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/25 hover:-translate-y-1">
+                                    <Link href="#contact">Start a Project</Link>
+                                </Button>
+                            </MagneticWrapper>
+                            <MagneticWrapper strength={0.2}>
+                                <Button size="lg" variant="outline" asChild className="text-lg px-8 h-14 border-2 hover:bg-secondary transition-all hover:-translate-y-1">
+                                    <Link href="#projects" className="group">
+                                        View Our Work
+                                        <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                                    </Link>
+                                </Button>
+                            </MagneticWrapper>
                         </motion.div>
                     </motion.div>
 

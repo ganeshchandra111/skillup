@@ -6,17 +6,21 @@ import HorizontalProjectsScroller from "@/components/HorizontalProjectsScroller"
 import PricingSection from "@/components/PricingSection";
 import FAQAccordion from "@/components/FAQAccordion";
 import ContactSection from "@/components/ContactSection";
+import TechStackMarquee from "@/components/TechStackMarquee";
+import CTASection from "@/components/CTASection";
 
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen">
       <HeroSection />
+      <TechStackMarquee />
       <AboutSection />
       <TestimonialsSection />
       <ServicesSection />
       <HorizontalProjectsScroller />
       <PricingSection />
       <FAQAccordion />
+      <CTASection />
       <ContactSection />
     </main>
   );
