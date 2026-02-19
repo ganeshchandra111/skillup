@@ -32,6 +32,23 @@ export const projects: Project[] = [
         description: "A professional portfolio website for doctors.",
         link: "https://joyful-cupcake-356e56.netlify.app/"
     },
+    {
+        id: 4,
+        title: "Kotas way",
+        category: "Portfolio",
+        image: "/images/project4.jpg", // Keeping placeholder
+        description: "A professional portfolio website for JEE aspirants.",
+        link: "https://amt.waytestseries.com/"
+    },
+    {
+        id: 5,
+        title: "MSMF Classes",
+        category: "Portfolio",
+        image: "/images/project5.jpg", // Keeping placeholder
+        description: "MSMF Classes",
+        link: "https://www.msmfclasses.com/"
+    },
+
     // {
     //     id: 4,
     //     title: "Interior Design Portfolio",
