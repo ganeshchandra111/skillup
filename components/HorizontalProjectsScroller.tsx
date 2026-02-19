@@ -2,6 +2,7 @@
 
 import { projects } from "@/data/projects";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -58,9 +59,10 @@ export default function HorizontalProjectsScroller() {
                             <div className="absolute inset-0 bg-slate-800">
                                 <div className="w-full h-full relative overflow-hidden group-hover:scale-105 transition-transform duration-700 ease-out">
                                     {project.link === "none" || project.link === "javascript:void(0)" ? (
-                                        <img
+                                        <Image
                                             src={project.image}
                                             alt={project.title}
+                                            fill
                                             className="w-full h-full object-cover"
                                         />
                                     ) : (

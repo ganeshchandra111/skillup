@@ -65,6 +65,7 @@ export default function TestimonialsSection() {
                             <p className="text-accent-foreground italic relative">
                                 <span className="absolute -top-4 -left-2 text-4xl text-primary/20 font-serif">&quot;</span>
                                 {testimonial.content}
+                                <span className="absolute -bottom-4 -right-2 text-4xl text-primary/20 font-serif">&quot;</span>
                             </p>
                         </motion.div>
                     ))}
