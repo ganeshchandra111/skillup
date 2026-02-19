@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Facebook, Instagram, Twitter, Linkedin, ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
+import { Facebook, Instagram, Twitter, Linkedin, ArrowUpRight, Mail, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 import MagneticWrapper from "./MagneticWrapper";
 
