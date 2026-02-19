@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { motion, Variants } from "framer-motion";
-import { MessageCircle, Mail, Phone, MapPin, Send } from "lucide-react";
+import { MessageCircle, Mail, MapPin, Send } from "lucide-react";
 import Link from "next/link";
 import { ScrollReveal } from "./ScrollReveal";
 
