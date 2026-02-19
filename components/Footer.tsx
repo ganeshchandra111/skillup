@@ -106,23 +106,23 @@ export default function Footer() {
                             Get in Touch
                         </h3>
                         <div className="space-y-6">
-                            <Link href="mailto:hello@skillup.com" className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors group">
+                            <Link href="skillup.edu.in@gmail.com" className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors group">
                                 <div className="w-10 h-10 rounded-xl bg-primary/5 flex items-center justify-center group-hover:bg-primary/10 transition-colors">
                                     <Mail className="w-5 h-5" />
                                 </div>
-                                <span>hello@skillup.com</span>
+                                <span>skillup.edu.in@gmail.com</span>
                             </Link>
-                            <div className="flex items-center gap-4 text-muted-foreground">
+                            {/* <div className="flex items-center gap-4 text-muted-foreground">
                                 <div className="w-10 h-10 rounded-xl bg-primary/5 flex items-center justify-center">
                                     <MapPin className="w-5 h-5" />
                                 </div>
                                 <span>Global HQ, Digital Space</span>
-                            </div>
-                            <Link href="tel:+1234567890" className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors group">
+                            </div> */}
+                            <Link href="tel:+919494333702" className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors group">
                                 <div className="w-10 h-10 rounded-xl bg-primary/5 flex items-center justify-center group-hover:bg-primary/10 transition-colors">
                                     <Phone className="w-5 h-5" />
                                 </div>
-                                <span>+1 (234) 567-890</span>
+                                <span>+91 94943 33702</span>
                             </Link>
                         </div>
                     </div>

@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { motion, Variants } from "framer-motion";
-import { MessageCircle, Mail, Phone, MapPin, Send } from "lucide-react";
+import { MessageCircle, Mail, MapPin, Send } from "lucide-react";
 import Link from "next/link";
 import { ScrollReveal } from "./ScrollReveal";
 
@@ -116,7 +116,7 @@ export default function ContactSection() {
                                 </div>
                                 <div>
                                     <p className="text-sm text-slate-500 font-bold uppercase tracking-wider">Headquarters</p>
-                                    <p className="text-lg font-medium group-hover:text-primary transition-colors">Telangana, India</p>
+                                    <p className="text-lg font-medium group-hover:text-primary transition-colors">Andhra Pradesh, India</p>
                                 </div>
                             </motion.div>
 
