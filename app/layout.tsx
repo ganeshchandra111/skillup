@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "SkillUp - Professional Website Development",
-  description: "We build professional websites that help businesses grow. Custom web design, development, and e-commerce solutions.",
+  description: "SkillUp is a technology-driven platform that empowers students and businesses through practical, industry-focused skills. We build modern, responsive websites and mentor learners with hands-on, career-oriented training.",
   keywords: ["web design", "web development", "business website", "ecommerce", "seo", "skillup"],
   openGraph: {
     title: "SkillUp - Professional Website Development",
@@ -31,8 +31,8 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          defaultTheme="light"
+          enableSystem={false}
           disableTransitionOnChange
         >
           <CustomCursor />

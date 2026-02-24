@@ -15,9 +15,9 @@ export default function Home() {
       <HeroSection />
       <TechStackMarquee />
       <AboutSection />
-      <TestimonialsSection />
       <ServicesSection />
       <HorizontalProjectsScroller />
+      <TestimonialsSection />
       <PricingSection />
       <FAQAccordion />
       <CTASection />

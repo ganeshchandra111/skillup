@@ -56,8 +56,7 @@ export default function Footer() {
                                 SKILLUP<span className="text-foreground">.</span>
                             </Link>
                             <p className="text-lg text-muted-foreground mb-8 max-w-sm leading-relaxed">
-                                Crafting high-performance digital legacies for businesses that refuse to settle for average.
-                                Based in the future, building today.
+                                SkillUp is a technology-driven platform that empowers students and businesses through practical, industry-focused skills.
                             </p>
 
                             <div className="flex gap-4">

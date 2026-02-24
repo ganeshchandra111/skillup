@@ -101,7 +101,7 @@ export default function HeroSection() {
                             variants={itemVariants}
                             className="text-lg md:text-xl text-accent-foreground mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed"
                         >
-                            Transform your digital presence with high-performance, beautiful, and user-centric websites tailored for elite business success.
+                            SkillUp is a technology-driven platform that empowers students and businesses through practical, industry-focused skills. We build modern, responsive websites and mentor learners with hands-on, career-oriented training.
                         </motion.p>
 
                         <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">

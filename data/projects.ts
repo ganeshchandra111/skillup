@@ -49,12 +49,20 @@ export const projects: Project[] = [
         link: "https://www.msmfclasses.com/"
     },
 
-    // {
-    //     id: 4,
-    //     title: "Interior Design Portfolio",
-    //     category: "Interior Design",
-    //     image: "/images/project4.jpg", // Keeping placeholder
-    //     description: "Showcase for interior design projects (Work in Progress).",
-    //     link: "https://app.netlify.com/projects/interiordesign11/overview"
-    // }
+    {
+        id: 6,
+        title: "Aura Perfume",
+        category: "Business",
+        image: "/images/project6.jpg",
+        description: "A premium business landing page for a fragrance brand.",
+        link: "https://purfume.vercel.app/"
+    },
+    {
+        id: 7,
+        title: "Ashoka Saachi",
+        category: "Events",
+        image: "/images/project7.jpg",
+        description: "Elegant event management and showcase platform.",
+        link: "https://ashokasaachi.com/"
+    }
 ];

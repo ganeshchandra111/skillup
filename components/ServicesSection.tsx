@@ -70,9 +70,6 @@ export default function ServicesSection() {
                                         {service.description}
                                     </p>
 
-                                    <div className="mt-8 flex items-center gap-2 text-sm font-bold text-primary opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-[-10px] group-hover:translate-x-0">
-                                        Learn More <ArrowRight size={16} />
-                                    </div>
                                 </div>
 
                                 {/* Bottom Glow Effect */}

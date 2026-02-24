@@ -5,6 +5,7 @@ import { motion, useMotionValue, useSpring } from "framer-motion";
 
 export default function CustomCursor() {
     const [isPointer, setIsPointer] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
 
     const mouseX = useMotionValue(0);
     const mouseY = useMotionValue(0);
@@ -15,6 +16,13 @@ export default function CustomCursor() {
     const cursorY = useSpring(mouseY, springConfig);
 
     useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.matchMedia("(max-width: 768px)").matches);
+        };
+
+        checkMobile();
+        window.addEventListener("resize", checkMobile);
+
         const moveCursor = (e: MouseEvent) => {
             mouseX.set(e.clientX);
             mouseY.set(e.clientY);
@@ -37,10 +45,13 @@ export default function CustomCursor() {
         window.addEventListener("mouseover", handleMouseOver);
 
         return () => {
+            window.removeEventListener("resize", checkMobile);
             window.removeEventListener("mousemove", moveCursor);
             window.removeEventListener("mouseover", handleMouseOver);
         };
     }, [mouseX, mouseY]);
+
+    if (isMobile) return null;
 
     return (
         <>

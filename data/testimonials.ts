@@ -1,44 +1,50 @@
 export const testimonials = [
     {
         id: 1,
-        name: "Alex Rivera",
-        role: "Founder, TechFlow",
-        content: "SkillUp transformed our vision into a stunning reality. Their attention to detail is unmatched.",
-        avatar: ""
+        name: "Amit",
+        role: "",
+        content:
+            "We needed a website for our startup quickly. They handled everything and the final site looked way better than we expected.",
+        avatar: "https://randomuser.me/api/portraits/men/31.jpg"
     },
     {
         id: 2,
-        name: "Sarah Chen",
-        role: "Marketing Director, Bloom",
-        content: "The best web development partner we've ever worked with. Fast, professional, and creative.",
-        avatar: ""
+        name: "Pooja",
+        role: "",
+        content:
+            "The process was simple. Sent them what we wanted and they turned it into a clean, modern website.",
+        avatar: "https://randomuser.me/api/portraits/women/28.jpg"
     },
     {
         id: 3,
-        name: "Marcus Thorne",
-        role: "CEO, NexaCorp",
-        content: "Our conversion rate tripled after the redesign. SkillUp truly knows how to build for business.",
-        avatar: ""
+        name: "Rakesh",
+        role: "",
+        content:
+            "Our old site was slow and outdated. After the redesign it loads faster and actually looks professional.",
+        avatar: "https://randomuser.me/api/portraits/men/45.jpg"
     },
     {
         id: 4,
-        name: "Elena Rodriguez",
-        role: "Creative Lead, Studio Nine",
-        content: "Elegant code and beautiful design. A rare combination that SkillUp delivers every time.",
-        avatar: ""
+        name: "Divya",
+        role: "",
+        content:
+            "Communication was clear the whole time. Changes were done quickly without making it complicated.",
+        avatar: "https://randomuser.me/api/portraits/women/51.jpg"
     },
     {
         id: 5,
-        name: "David Park",
-        role: "E-commerce Owner",
-        content: "Highly recommended! They handled everything from UX to complex backend integrations smoothly.",
-        avatar: ""
+        name: "Sandeep",
+        role: "",
+        content:
+            "They understood what our business needed instead of just building a generic template site.",
+        avatar: "https://randomuser.me/api/portraits/men/62.jpg"
     },
     {
         id: 6,
-        name: "Jessica White",
-        role: "SaaS Founder",
-        content: "Their expertise in modern web technologies is impressive. Our app feels incredibly snappy.",
-        avatar: ""
+        name: "Kavya",
+        role: "",
+        content:
+            "Simple, fast, and modern design. Exactly what we were looking for.",
+        avatar: "https://randomuser.me/api/portraits/women/19.jpg"
     }
 ];

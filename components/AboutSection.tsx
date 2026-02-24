@@ -55,6 +55,7 @@ export default function AboutSection() {
                         <p className="text-xl md:text-2xl text-slate-500 dark:text-slate-400 mb-12 leading-relaxed font-light">
                             SkillUp is a technology-driven platform that empowers students and businesses through practical, industry-focused skills. We build modern, responsive websites and mentor learners with hands-on, career-oriented training.
                         </p>
+
                     </ScrollReveal>
 
                     <ScrollReveal direction="up" delay={0.4}>
