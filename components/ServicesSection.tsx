@@ -2,7 +2,7 @@
 
 import { services } from "@/data/services";
 import { motion, Variants } from "framer-motion";
-import { LucideIcon, ArrowRight } from "lucide-react";
+import { LucideIcon } from "lucide-react";
 import { ScrollReveal } from "./ScrollReveal";
 
 export default function ServicesSection() {
