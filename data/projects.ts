@@ -56,13 +56,13 @@ export const projects: Project[] = [
         description: "An elegant online store for Qalb Fragrance.",
         link: "https://qalbfragrance.netlify.app/"
     },
-    {
-        id: 7,
-        title: "Full Stack Application",
-        category: "Web Application",
-        image: "/spidyhost.png",
-        description: "A comprehensive full stack hosting solution built for performance.",
-        link: "none"
-    }
+    // {
+    //     id: 7,
+    //     title: "Full Stack Application",
+    //     category: "Web Application",
+    //     image: "/spidyhost.png",
+    //     description: "A comprehensive full stack hosting solution built for performance.",
+    //     link: "none"
+    // }
 ];
 
