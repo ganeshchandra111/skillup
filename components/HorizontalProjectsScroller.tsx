@@ -55,12 +55,6 @@ export default function HorizontalProjectsScroller() {
                             transition={{ duration: 0.8, delay: index * 0.1, ease: [0.22, 1, 0.36, 1] }}
                             className="relative group h-[350px] md:h-[450px] w-[85vw] md:w-[550px] bg-slate-900 rounded-3xl overflow-hidden shadow-2xl flex-shrink-0 snap-center border border-white/5"
                         >
-                            {/* Full Card Link overlay */}
-                            {project.link !== "none" && (
-                                <Link href={project.link} target="_blank" className="absolute inset-0 z-30">
-                                    <span className="sr-only">Visit {project.title}</span>
-                                </Link>
-                            )}
 
                             {/* Website Preview (Iframe or Image) */}
                             <div className="absolute inset-0 bg-slate-800">
@@ -82,12 +76,11 @@ export default function HorizontalProjectsScroller() {
                                     )}
                                 </div>
 
-                                {/* Overlay - Adjusted for better mobile visibility */}
-                                <div className="absolute inset-0 bg-slate-950/10 md:group-hover:bg-slate-950/80 transition-all duration-500" />
+                                {/* Overlay */}
+                                <div className="absolute inset-0 bg-slate-950/40 group-hover:bg-slate-950/80 transition-all duration-500" />
                             </div>
 
-                            {/* Content Overlay - Disabled on mobile to avoid 'pop up' effect */}
-                            <div className="absolute inset-0 flex flex-col items-center justify-center p-12 text-center z-10 opacity-0 md:group-hover:opacity-100 transition-all duration-500 transform translate-y-4 md:group-hover:translate-y-0">
+                            <div className="absolute inset-0 flex flex-col items-center justify-center p-12 text-center z-10 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
                                 <motion.span
                                     className="text-xs font-bold tracking-[0.3em] uppercase mb-4 text-primary"
                                 >
