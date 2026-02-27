@@ -67,9 +67,9 @@ export default function PricingSection() {
                             key={plan.id}
                             variants={cardVariants}
                             className={`group relative bg-white dark:bg-slate-900 border rounded-3xl p-10 flex flex-col transition-all duration-500 ${plan.popular
-                                    ? "shadow-[0_32px_80px_-20px_rgba(0,0,0,0.15)] ring-2 ring-primary border-primary/20 scale-[1.03] z-10"
-                                    : "shadow-sm hover:shadow-2xl border-border/50 hover:border-primary/20"
-                                }`}
+                                ? "shadow-[0_32px_80px_-20px_rgba(0,0,0,0.15)] ring-2 ring-primary border-primary/20 scale-[1.03] z-10"
+                                : "shadow-sm hover:shadow-2xl border-border/50 hover:border-primary/20"
+                                } dark:text-white`}
                             whileHover={{ y: -5 }}
                         >
                             {plan.popular && (
@@ -84,7 +84,7 @@ export default function PricingSection() {
                                     <span className="text-5xl font-bold tracking-tight text-primary">{plan.price}</span>
                                     <span className="text-slate-400 font-medium text-sm">/ fixed</span>
                                 </div>
-                                <p className="mt-6 text-sm text-slate-500 leading-relaxed min-h-[48px]">
+                                <p className="mt-6 text-sm text-slate-500 dark:text-slate-400 leading-relaxed min-h-[48px]">
                                     {plan.description}
                                 </p>
                             </div>
@@ -105,8 +105,7 @@ export default function PricingSection() {
                             <Button
                                 asChild
                                 size="lg"
-                                className={`w-full gap-3 h-14 rounded-2xl font-bold transition-all shadow-lg hover:shadow-primary/25 ${plan.popular ? "bg-primary hover:bg-primary/90" : "bg-slate-900 hover:bg-slate-800"
-                                    }`}
+                                className={`w-full gap-3 h-14 rounded-2xl font-bold transition-all shadow-lg hover:shadow-primary/25 bg-primary text-primary-foreground hover:bg-primary/90 `}
                             >
                                 <Link href={handleWhatsAppClick(plan.name, plan.price)} target="_blank">
                                     <MessageCircle size={20} className="group-hover:animate-bounce" /> Get Started
